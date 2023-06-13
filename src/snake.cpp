@@ -1,6 +1,6 @@
 #include "../include/snake.h"
 
-Snake::Snake(COORDS pos, int vel) {
+Snake::Snake(COORD pos, int vel) {
     this->pos = pos;
     this->vel = vel;
 
@@ -14,7 +14,7 @@ void Snake::direction(char dir) {this->dir = dir;}
 void Snake::grow() {len++;}
 COORD Snake::get_pos() {return pos; }
 
-veector<COORD> Snake::get_body() {return body; }
+vector<COORD> Snake::get_body() {return body; }
 
 void Snake::move_snake() {
     switch (dir) {
@@ -27,7 +27,7 @@ void Snake::move_snake() {
     body.push_back(pos);
 
     if (body.size() > len) {
-        body.earse(body.begin());
+        body.erase(body.begin());
 
     }
 }

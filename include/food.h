@@ -1,20 +1,20 @@
-#ifndef SNAKE_GAME_OOP
-#define SNAKE_GAME_OOP
+#ifndef SNAKE_GAME_OOP_FOOD_H
+#define SNAKE_GAME_OOP_FOOD_H
 
-//#include <windows.h>
+#include <windows.h>
 #include <cstdio>
 #include <random>
 
 #define WIDTH 50
 #define HEIGHT 25
 
-class Food{
+class Food {
 private:
     COORD pos;
 public:
-    void gen_food()
+    void gen_food();
 
-    CORD get_pos();
+    COORD get_pos();
 };
 
 

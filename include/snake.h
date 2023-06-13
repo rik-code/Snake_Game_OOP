@@ -1,8 +1,9 @@
-#ifndef SNAKE_GAME_OOP
-#define SNAKE_GAME_OOP
+#ifndef SNAKE_GAME_OOP_SNAKE_H
+#define SNAKE_GAME_OOP_SNAKE_H
 
-//#include <windows.h>
+#include <windows.h>
 #include <cstdio>
+#include <vector>
 
 #define WIDTH 50
 #define HEIGHT 25
@@ -17,7 +18,7 @@ private:
     int len;
     vector<COORD> body;
 public:
-    Snake(CORD pos, int vel);
+    Snake(COORD pos, int vel);
 
     void grow();
     void move_snake();
