@@ -68,6 +68,13 @@ int main() {
         if (snake.collided()) {
             game_over = true;
         }
+
+
+        if (snake.eaten(food.get_pos())) {
+            food.gen_food();
+            snake.grow();
+            score += 10;
+        }
     }
     return 0;
 }
